@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="WizardLM 2" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>WizardLM 2</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-2 publication-title">WizardLM 2</h1>
+
+
+                        <div class="is-size-4 publication-authors">
+                            <span class="author-block">Microsoft AI</span>
+
+                        </div>
+
+                         <div class="is-size-6 publication-authors">
+                            <span class="author-block">Apr 14, 2024</span>
+
+                        </div>
+
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/WizardLM/WizardMath-2-70B-0412" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            &#x1F917;
+                                        </span>
+                                        <span>Models</span>
+                                    </a>
+                                </span>
+                               
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/nlpxucan/WizardLM/WizardLM-2/" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                                    <a href="" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv [Coming]</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3"></h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We introduce and opensource WizardLM-2, our next generation state-of-the-art large language models, which have improved performance on  complex chat,  multilingual,  reasoning and agent.
+                            New family includes three cutting-edge models: WizardLM-2 8x22B, WizardLM-2 70B, and WizardLM-2 7B.
+                            <br /><br />
+                            WizardLM-2 is the latest milestone in our effort in scaling up LLM post-training. One year ago, we have been iterating on training of Wizard series  since our first work on
+                            Empowering Large Language Models to Follow Complex Instructions, then we accelerate the evolution to code and math reasoning scenarios.
+                            Since then, Evol-Instruct and Instruction&Process Supervised Reinforcement Learning (RLEIF) have become fundamental technologies for GenAI community. Recently, we have further optimized our
+                            methods and data quality, resulting in significant performance improvements, the outcome is WizardLM-2.
+
+                            <br /><br />
+
+                            WizardLM-2 8x22B is our most advanced model, and the best opensource LLM in our internal evaluation on highly complex tasks.
+                            WizardLM-2 70B reaches top-tier reasoning capabilities and is the first choice in the same size.
+                            WizardLM-2 7B is the fastest and achieves comparable performance with existing 5x larger opensource leading models.
+                            <br /><br />
+                            Following, we will introduce the overall methods and main experimental results, and the associated details and rethinking will be presented in our upcoming paper.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        	    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+<!--                <h2 class="title is-3">WizardLM 2 capacities</h2>-->
+                <div class="columns is-centered">
+                    <div class="column is-five-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 100%;" src="static/images/wizardtime.png" alt="wizardlm2" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Method Overview</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            As the natural world's human-generated data becomes increasingly exhausted through LLM training, we believe that:
+                            the data carefully created by AI and the model step-by-step supervised by AI will be the sole path towards more powerful AI.
+                            <br /><br />
+                            In the past one year, we built a fully AI powered synthetic training system:
+                            <ul>
+                              <li>Data Pre-Processing:</li>
+                              <ul>
+                                  <li>Data Analysis: We use this pipline to get the distribution of different attributes for new source data.
+                                      This helps us to have a preliminary understanding of the data. </li>
+                                  <li>Weighted Sampling: The distribution of the best training data is always not consistent with the natural distribution of human chat corpus,
+                                      thus we need adjust the weights of various attributes in the training data based on experimental experience. </li>
+                              </ul>
+                              <li>Progressive Learning: Unlike the common practice of using all data for one-time training,
+                                  we found that using different data partitions and progressively training stage-by-stage can achieve better results with less data.
+                                  In each stage, we firstly feed the data slice to following Evol Lab to get more diverse and complex [instruction, response] pairs.
+                                  Immediately, we leverage a new framework named "AI Align AI" (AAA) which can group multi state-of-the-art LLMs to teach and improve each other.
+                                  Finally, we successively apply the Supervised Learning, Stage-DPO, and RLEIF to optimize each variant.
+                              </li>
+
+                              <li>Evol Lab:</li>
+                              <ul>
+                                  <li>Evol-Instruct: Recently, we have dedicated significant effort to reassessing the various issues within the original Evol-Instruct method and
+                                      have initiated preliminary modifications. The new method enables various agents to automatically generate high quality instructions.
+                                  </li>
+                                  <li>Evol-Answer: Guiding the model to generate and rewrite responses multiple times can improve its logic, correctness, and affinity.</li>
+                              </ul>
+                              <li>AI Align AI (AAA):</li>
+                              <ul>
+                                  <li>Co-Teaching: We collect WizardLMs, and various licensed opensource and proprietary state-of-the-art models, then let them co-teach and improve each other,
+                                      the teaching contains simulated chat, quality judging, improvement suggestions and closing skill gap, etc. </li>
+                                  <li>Self-Teaching: WizardLM can generate new evolution training data for supervised learning and preference data for reinforcement learning via activate learning from itself.  </li>
+                              </ul>
+                              <li>Learning:</li>
+                              <ul>
+                                  <li>Supervised Learning.</li>
+                                  <li>Stage-DPO: For more effective offline reinforcement learning, we also split the preference data to different slices, and progressively improve the model stage by stage.</li>
+                                  <li>RLEIF: We employ instruction quality reward model (IRM) combined with the process supervision reward model (PRM) to achieve more precise correctness in the online reinforcement learning.</li>
+                              </ul>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    	    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+<!--                <h2 class="title is-3">WizardLM 2 capacities</h2>-->
+                <div class="columns is-centered">
+                    <div class="column is-five-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 100%;" src="static/images/exp_1.png" alt="wizardlm2" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-4">WizardLM 2 Capacities</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            To present a comprehensive overview of the performance of WizardLM-2, we conduct both human and automatic evaluations between our models and diverse baselines.
+                            As indicated in the following main experimental results, WizardLM-2 demonstrates highly competitive performance compared to those leading proprietary works
+                            and consistently outperforms all the existing state-of-the-art opensource models. More associated details and thinking will be presented in our upcoming paper.
+                            <br />
+                            <br />
+                            <b>Human Preferences Evaluation</b>
+                            <br />
+                            We carefully collected a complex and challenging set consisting of real-world  instructions, which includes main requirements of humanity,
+                            such as writing, coding, math, reasoning, agent, and multilingual. We perform a blind pairwise comparison between WizardLM-2 and baselines.
+                            To each annotator, responses from all models are presented, which are randomly shuffled to hide their sources. We report the win:loss rate without tie:
+                            <br />
+                            <ul>
+                                  <li>WizardLM-2 8x22B is just slightly falling behind GPT-4-1106-preview, and significantly stronger than Command R Plus and GPT4-0314.
+                                  </li>
+                                  <li>WizardLM-2 70B is better than GPT4-0613, Mistral-Large, and Qwen1.5-72B-Chat.</li>
+                                  <li>WizardLM-2 7B is comparable with Qwen1.5-32B-Chat, and surpasses Qwen1.5-14B-Chat and Starling-LM-7B-beta.</li>
+                              </ul>
+                            Through this human preferences evaluation, WizardLM-2's capabilities are very close to the cutting-edge proprietary models such as GPT-4-1106-preview,
+                        and significantly ahead of all the other open source models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+<!--                <h2 class="title is-3">WizardLM 2 capacities</h2>-->
+                <div class="columns is-centered">
+                    <div class="column is-six-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 120%;" src="static/images/winall.png" alt="wizardlm2" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+<!--                    <h2 class="title is-4">WizardLM 2 Capacities</h2>-->
+                    <div class="content has-text-justified">
+                        <p>
+
+                            <b>MT-Bench</b>
+                            <br />
+                            We also adopt the automatic MT-Bench evaluation framework based on GPT-4 proposed by lmsys to assess the performance of models.
+                            The WizardLM-2 8x22B even demonstrates highly competitive performance compared to the most advanced proprietary works such as GPT-4-Trubo and Glaude-3.
+                            Meanwhile, WizardLM-2 7B and WizardLM-2 70B are all the top-performing models among the other leading baselines at 7B to 70B model scales.
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+<!--                <h2 class="title is-3">WizardLM 2 capacities</h2>-->
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 120%;" src="static/images/mtbench.png" alt="wizardlm2" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-4">Usage</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            The model weights of WizardLM-2 8x22B and WizardLM-2 7B are shared on <a href="https://huggingface.co/microsoft/WizardLM-2-8x22B" style="color:#1976D2;" target=“_blank”>Huggingface</a>,
+                            and WizardLM-2 70B and the demo of all the models will be available in the coming days. Please use the same system prompts strictly with us to guarantee the generation quality.
+                            <br/><br/>
+                            ❗<b>Note for model system prompts usage:</b>
+                            <br/>
+                                WizardLM-2 adopts the prompt format from <b>Vicuna</b> and supports <b>multi-turn</b> conversation.
+                            <br/>The prompt should be as following:
+                            <br/>
+
+                                <pre><code>A chat between a curious user and an artificial intelligence assistant. The assistant gives <br/>helpful, detailed, and polite answers to the user's questions. USER: Hi ASSISTANT: Hello.&lt;/s&gt;<br/>USER: Who are you? ASSISTANT: I am WizardLM-2.&lt;/s&gt;......
+                                </code></pre>
+
+                             <b>Inference WizardLM-2 Demo Script</b>
+                        <br/>
+                                We provide a WizardLM-2 inference demo  <a href="https://github.com/nlpxucan/WizardLM/tree/main/demo" style="color:#1976D2;" target=“_blank”>code</a> on our github.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        </section>
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-4">License</h2>
+                    <div class="content has-text-justified">
+                        <p>The License of WizardLM-2 8x22B and WizardLM-2 7B is Apache2.0. The License of WizardLM-2 70B is Llama-2-Community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
